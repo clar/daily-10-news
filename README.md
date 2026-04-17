@@ -16,15 +16,15 @@
 
 ## AI最新日报
 
-**[2026-04-16 · Anthropic收入超越OpenAI · Stanford AI Index震撼发布 · 物理AI机器人爆发](./ai_daily/2026-04-16/report.md)**
+**[2026-04-17 · Claude Opus 4.7 发布 · Meta Muse Spark 入局 · 中国AI伦理新规 · 人形机器人进家庭](./ai_daily/2026-04-17/report.md)**
 
-> 今日焦点：**Anthropic ARR $300亿首超OpenAI · Claude Mythos 5十万亿参数 · Stanford AI Index：HLE得分破50%**
+> 今日焦点：**Claude Opus 4.7 SWE-bench Pro 64.3% · Anthropic 锁定 Claude Mythos（Project Glasswing）· Meta Muse Spark Intelligence Index 52分 · UniX Panther 首进真实家庭**
 >
-> - Anthropic ARR达$300亿，15个月增长30倍，历史上首次超越OpenAI（$240亿），企业大客户翻倍
-> - Stanford 2026 AI Index：Humanity's Last Exam得分从8.8%跃升至50%+，SWE-bench编程能力逼近人类满分
-> - Claude Mythos 5发布：10万亿参数，自主发现数千零日漏洞，CTF挑战成功率73%
-> - NVIDIA国家机器人周：Isaac GR00T、Cosmos开源物理AI框架正式落地，Boston Dynamics等发布下一代机器人
-> - PwC报告：74%的AI经济价值被20%的公司独占，AI马太效应加速
+> - Claude Opus 4.7 正式上线：SWE-bench Pro 64.3%、百万Token上下文、xhigh推理模式，编程能力达新峰值
+> - Anthropic 将旗舰 Claude Mythos 锁在50家企业防火墙后（Project Glasswing），因网络安全能力过强拒绝公开
+> - Meta Muse Spark 发布：Alexandr Wang 领导的 Meta Superintelligence Labs 首款模型，健康场景全行业领先
+> - 中美AI差距仅剩2.7分（Stanford Arena Elo），Anthropic 1503 vs 阿里 1449，技术代差基本消弭
+> - UniX AI Panther 成全球首个在真实家庭完成量产级多任务验证的人形机器人，商业化进入倒计时
 
 ---
 
@@ -46,6 +46,6 @@
 
 | 日期 | 今日焦点 | 链接 |
 |------|---------|------|
-| 2026-04-17 | karpathy-skills 蝉联榜首 · 自进化 Agent 双雄并起 · Vercel 官方入场 Agent | [GitHub热榜](./github_daily/2026-04-17/trending.md) |
+| 2026-04-17 | Claude Opus 4.7发布 · Project Glasswing锁定Mythos · Meta Muse Spark入局 · 人形机器人进家庭 | [AI日报](./ai_daily/2026-04-17/report.md) · [GitHub热榜](./github_daily/2026-04-17/trending.md) |
 | 2026-04-16 | SEC CLARITY Act 圆桌会议 · BTC $74,576 MFI新高 · Morgan Stanley MSBT · Kraken内部泄露 | [Crypto日报](./crypto_daily/2026-04-16/report.md) · [AI日报](./ai_daily/2026-04-16/report.md) · [GitHub热榜](./github_daily/2026-04-16/trending.md) |
 | 2026-04-15 | AI Agent 爆发期 · Claude 生态霸榜 · 金融 AI 双层突破 | [查看报告](./github_daily/2026-04-15/trending.md) |
