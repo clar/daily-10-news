@@ -4,13 +4,15 @@
 
 **[2026-04-17 · Claude 生态三层闭环 · 自进化 Agent 双雄并起 · Vercel 官方入场](./github_daily/2026-04-17/trending.md)**
 
-> 今日焦点：**karpathy-skills +7,959⭐ 蝉联榜首 · 自进化 Agent 两项目同日进前十 · Vercel open-agents 官方入场**
+> 今日焦点：**karpathy-skills +7,959⭐ 蝉联榜首（累计 51,251⭐）· claude-mem 全榜总星破 6 万 · 自进化 Agent 双雄同日进前十 · Vercel open-agents 官方入场**
 >
-> - `forrestchang/andrej-karpathy-skills` 单日 +7,959⭐ 蝉联第一（累计 49,735⭐）——"AI 可读工程规范"成为项目标配基础设施
-> - `thedotmack/claude-mem` 全榜总星之首（59,672⭐）+1,897⭐，跨会话记忆已成 Claude Code 事实标准插件
-> - `lsdefine/GenericAgent` +872⭐ 与 `EvoMap/evolver` +812⭐ 同日上榜，自进化 Agent 从概念走向实验落地
+> - `forrestchang/andrej-karpathy-skills` 单日 +7,959⭐ 蝉联第一（累计 51,251⭐）——"AI 可读工程规范"成为项目标配基础设施
+> - `thedotmack/claude-mem` 全榜总星之首（60,325⭐）+1,897⭐，跨会话记忆已成 Claude Code 事实标准插件
+> - `lsdefine/GenericAgent` +872⭐ 与 `EvoMap/evolver` +812⭐ 同日进前十，自进化 Agent 从概念走向实验落地
 > - `vercel-labs/open-agents` +738⭐，大厂官方下场，Agent 开发模板走向标准化
 > - `google/magika` +854⭐，AI 驱动文件类型检测，Google 用 AI 重建基础设施层
+>
+> 结构化数据：[trending.json](./github_daily/2026-04-17/trending.json)
 
 ---
 
