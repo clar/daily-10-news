@@ -1,9 +1,5 @@
 # GitHub 热门仓库日报 · 2026-04-17
 
-> 数据来源：[github.com/trending](https://github.com/trending) · 统计周期：今日（Daily）
-
----
-
 ## 今日焦点
 
 > **Claude 生态三层闭环成型 · 自进化 Agent 双雄同日进前十 · Vercel 官方下场 Agent 模板**
