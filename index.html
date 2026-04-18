@@ -246,6 +246,8 @@ body {
 
 /* ─── Markdown 渲染 ─── */
 .section-body > h1:first-child { display: none; }
+.section-body > :first-child,
+.section-body > h1:first-child + * { margin-top: 0; }
 
 .section-body h1 {
   font-family: var(--font-display);

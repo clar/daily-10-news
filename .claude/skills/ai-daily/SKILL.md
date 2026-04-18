@@ -39,8 +39,6 @@ Aggregate from multiple sources to get the fullest picture:
 ## Report Format
 
 ```markdown
-# AI 每日热点日报 · {YYYY-MM-DD}
-
 ## 今日焦点
 
 > **{3-5 defining themes separated by ·}**

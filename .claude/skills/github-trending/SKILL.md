@@ -19,8 +19,6 @@ Generate a daily GitHub trending repositories analysis in Chinese.
 ## Report Format
 
 ```markdown
-# GitHub 热门仓库日报 · {YYYY-MM-DD}
-
 ## 今日焦点
 
 > **{theme keywords separated by ·, 3-5 items}**

@@ -34,8 +34,6 @@ Cover stories across these categories (not all every day):
 ## Report Format
 
 ```markdown
-# Crypto 每日热门新闻 · {YYYY-MM-DD}
-
 ## 今日焦点
 
 > **{3-5 defining themes separated by ·}**
