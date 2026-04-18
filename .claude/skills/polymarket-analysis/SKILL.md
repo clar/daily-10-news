@@ -39,8 +39,6 @@ Generate a markdown file with this structure:
 
 > 今日焦点：**{3-5 个今日最值得关注的市场关键词，用 · 分隔}**
 
-> 数据来源：[Polymarket](https://polymarket.com) | 更新时间：{YYYY-MM-DD}
-
 ---
 
 ## 热门市场速览
