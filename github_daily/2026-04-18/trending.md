@@ -1,5 +1,3 @@
-# GitHub 热门仓库日报 · 2026-04-18
-
 ## 今日焦点
 
 > **中文 LLM 教程登顶 · AI 穿戴持续发力 · 自进化 Agent 双雄再聚首 · Mozilla Thunderbird 跨界做 AI 客户端 · OpenAI Agents SDK 单日大涨**
