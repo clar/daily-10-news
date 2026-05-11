@@ -40,12 +40,27 @@
 - 耗时过长：允许部分 skill 使用子 agent 并行（仅限无写文件依赖的），但要在 prompt 里显式传入日期
 - 网络失败：重试该单项，不重跑全部
 
-## 分支与提交
+## 分支与提交（强制）
 
-- 默认在 `main` 分支直接开发
-- 开工前先 `git pull origin main`
-- 提交前检查 `git status`，避免遗漏文件
-- 完成后 `git push -u origin main`
+> **直推 `main` 会被 harness 代理以 HTTP 403 拦截**，必须走 "feature 分支 + PR + MCP 合并" 流程。
+
+标准流程：
+
+1. 开工前在 `main` 上 `git pull origin main`，确保基础最新
+2. 切到 daily 分支：harness 注入的分支名（如 `claude/practical-babbage-xxxx`）就用它；否则用 `git checkout -b claude/daily-{YYYY-MM-DD}`
+3. 写完 5 份报告，`git add` 对应目录 → `git commit` → `git push -u origin <daily-branch>`
+4. 立刻通过 GitHub MCP 自动合入 main，**无需人工点击**：
+   - `mcp__github__create_pull_request`（base=`main`、head=`<daily-branch>`）
+   - `mcp__github__merge_pull_request`（`merge_method=squash`）
+5. 合并成功即视为发布完成；如 MCP 返回需要审核/检查未通过，再告知用户人工介入
+6. 合并完成后**可以直接删除** daily 分支（无需保留历史，main 已经有 squash 后的提交）
+
+注意事项：
+
+- **永远不要尝试 `git push origin main`**，会浪费时间在 403 重试上
+- 如果当前已经在 daily 分支（如 routine 启动时 harness 已 checkout），直接在该分支上 commit/push 即可，不要切回 main
+- PR 标题统一格式：`feat: add daily reports for {YYYY-MM-DD}`
+- 删除 daily 分支可调用 `mcp__github__delete_file` 不行——用 `git push origin --delete <branch>` 或留待 GitHub UI 处理
 
 ## Skill 目录
 
