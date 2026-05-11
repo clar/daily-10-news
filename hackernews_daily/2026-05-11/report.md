@@ -14,28 +14,28 @@
 
 ## 今日热榜总览
 
-| 排名 | 标题 | 来源 | 分数 | 评论数 |
+| 排名 | 标题 | 描述 | 分数 | 评论数 |
 |------|------|------|------|--------|
-| 1 | [Hardware Attestation as Monopoly Enabler](https://grapheneos.social/@GrapheneOS/116550899908879585) | grapheneos.social | 932 | 340 |
-| 2 | [Local AI needs to be the norm](https://unix.foo/posts/local-ai-needs-to-be-norm/) | unix.foo | 620 | 295 |
-| 3 | [I returned to AWS and was reminded why I left](https://fourlightyears.blogspot.com/) | fourlightyears.blogspot.com | 663 | 485 |
-| 4 | [Incident Report: CVE-2024-YIKES](https://nesbitt.io/) | nesbitt.io | 409 | 98 |
-| 5 | [Maryland citizens hit with $2B power grid upgrade for out-of-state AI](https://www.tomshardware.com/) | tomshardware.com | 151 | 71 |
-| 6 | [Ask HN: What are you working on? (May 2026)](https://news.ycombinator.com/item?id=48085993) | news.ycombinator.com | 138 | 474 |
-| 7 | [Traces Of Humanity](https://tracesofhumanity.org/) | tracesofhumanity.org | 130 | 19 |
-| 8 | [The locals don't know](https://quarter--mile.com/) | quarter--mile.com | 104 | 73 |
-| 9 | [Running local models on an M4 with 24GB memory](https://jola.dev/) | jola.dev | 101 | 48 |
-| 10 | [Obsidian plugin was abused to deploy a remote access trojan](https://netsecops.io/) | netsecops.io | 88 | 43 |
-| 11 | [Stop MitM on the first SSH connection, on any VPS or cloud provider](https://joachimschipper.nl/) | joachimschipper.nl | 83 | 46 |
-| 12 | [PS3 Emulator Devs Politely Ask That People Stop Flooding It with AI PRs](https://kotaku.com/) | kotaku.com | 80 | 56 |
-| 13 | [I'm going back to writing code by hand](https://blog.k10s.dev/im-going-back-to-writing-code-by-hand/) | k10s.dev | 62 | 23 |
-| 14 | [Guy Goma's Accidental BBC Interview Lives on After 20 Years](https://www.nytimes.com/) | nytimes.com | 59 | 12 |
-| 15 | [Eight More '8-Bit Era' Microprocessors](https://thechipletter.substack.com/) | thechipletter.substack.com | 52 | 13 |
-| 16 | [First tunnel element of the Fehmarnbelt Tunnel immersed](https://www.arup.com/) | arup.com | 49 | 12 |
-| 17 | [The people preserving the scientific practice of bird banding](https://thenarwhal.ca/) | thenarwhal.ca | 34 | — |
-| 18 | [AI coding agent, used to write code, needs to reduce your maintenance costs](https://www.jamesshore.com/) | jamesshore.com | 29 | 5 |
-| 19 | [I designed Microsoft's EA channel in 2001. It's being dismantled in 2026](https://brendanoconnor.net/) | brendanoconnor.net | 25 | 7 |
-| 20 | [How Fast Does Claude, Acting as a User Space IP Stack, Respond to Pings?](https://dunkels.com/) | dunkels.com | 11 | 1 |
+| 1 | [Hardware Attestation as Monopoly Enabler](https://grapheneos.social/@GrapheneOS/116550899908879585) | GrapheneOS 怒批 Play Integrity 变商业准入证 | 932 | 340 |
+| 2 | [Local AI needs to be the norm](https://unix.foo/posts/local-ai-needs-to-be-norm/) | 本地 AI 应成默认，对抗供应商锁定 | 620 | 295 |
+| 3 | [I returned to AWS and was reminded why I left](https://fourlightyears.blogspot.com/) | "逃离 AWS"长帖再次刷屏 | 663 | 485 |
+| 4 | [Incident Report: CVE-2024-YIKES](https://nesbitt.io/) | 坦诚事后复盘 + 批评 ZDI 披露流程 | 409 | 98 |
+| 5 | [Maryland citizens hit with $2B power grid upgrade for out-of-state AI](https://www.tomshardware.com/) | 居民为外州数据中心买单电网升级费 | 151 | 71 |
+| 6 | [Ask HN: What are you working on? (May 2026)](https://news.ycombinator.com/item?id=48085993) | 月度社区项目分享帖 | 138 | 474 |
+| 7 | [Traces Of Humanity](https://tracesofhumanity.org/) | 人文影像档案项目 | 130 | 19 |
+| 8 | [The locals don't know](https://quarter--mile.com/) | 本地视角 vs 游客视角的随笔 | 104 | 73 |
+| 9 | [Running local models on an M4 with 24GB memory](https://jola.dev/) | Apple Silicon 上跑开源模型实测 | 101 | 48 |
+| 10 | [Obsidian plugin was abused to deploy a remote access trojan](https://netsecops.io/) | 供应链攻击：插件投毒部署 RAT | 88 | 43 |
+| 11 | [Stop MitM on the first SSH connection, on any VPS or cloud provider](https://joachimschipper.nl/) | SSH 首连防 MitM 的实用方案 | 83 | 46 |
+| 12 | [PS3 Emulator Devs Politely Ask That People Stop Flooding It with AI PRs](https://kotaku.com/) | 开源维护者吐槽 AI 生成 PR 灌水 | 80 | 56 |
+| 13 | [I'm going back to writing code by hand](https://blog.k10s.dev/im-going-back-to-writing-code-by-hand/) | 开发者反思 AI 编程依赖 | 62 | 23 |
+| 14 | [Guy Goma's Accidental BBC Interview Lives on After 20 Years](https://www.nytimes.com/) | 经典误播事件 20 年后回顾 | 59 | 12 |
+| 15 | [Eight More '8-Bit Era' Microprocessors](https://thechipletter.substack.com/) | 早期微处理器硬件考古 | 52 | 13 |
+| 16 | [First tunnel element of the Fehmarnbelt Tunnel immersed](https://www.arup.com/) | 德丹海底隧道工程节点 | 49 | 12 |
+| 17 | [The people preserving the scientific practice of bird banding](https://thenarwhal.ca/) | 鸟类环志科学的传承故事 | 34 | — |
+| 18 | [AI coding agent, used to write code, needs to reduce your maintenance costs](https://www.jamesshore.com/) | AI 代理价值评估的新视角 | 29 | 5 |
+| 19 | [I designed Microsoft's EA channel in 2001. It's being dismantled in 2026](https://brendanoconnor.net/) | 微软 EA 销售渠道 20 年兴衰 | 25 | 7 |
+| 20 | [How Fast Does Claude, Acting as a User Space IP Stack, Respond to Pings?](https://dunkels.com/) | LLM 当用户空间 IP 栈的趣味实验 | 11 | 1 |
 
 ---
 
