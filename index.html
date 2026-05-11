@@ -23,6 +23,7 @@
   --accent-crypto: #b8860b;
   --accent-stock: #b85c38;
   --accent-polymarket: #7b61ff;
+  --accent-hackernews: #ff6600;
   --rule: #d4cfc8;
   --rule-light: #e8e4de;
   --font-display: 'Playfair Display', 'Georgia', serif;
@@ -165,6 +166,7 @@ body {
 .section-tabs a.active[data-section="crypto"] { color: var(--accent-crypto); border-bottom-color: var(--accent-crypto); }
 .section-tabs a.active[data-section="stock"] { color: var(--accent-stock); border-bottom-color: var(--accent-stock); }
 .section-tabs a.active[data-section="polymarket"] { color: var(--accent-polymarket); border-bottom-color: var(--accent-polymarket); }
+.section-tabs a.active[data-section="hackernews"] { color: var(--accent-hackernews); border-bottom-color: var(--accent-hackernews); }
 
 .tab-dot {
   width: 8px;
@@ -177,6 +179,7 @@ body {
 [data-section="crypto"] .tab-dot { background: var(--accent-crypto); }
 [data-section="stock"] .tab-dot { background: var(--accent-stock); }
 [data-section="polymarket"] .tab-dot { background: var(--accent-polymarket); }
+[data-section="hackernews"] .tab-dot { background: var(--accent-hackernews); }
 
 /* 无数据的 tab 样式 */
 .section-tabs a.unavailable {
@@ -444,6 +447,7 @@ body {
   <a data-section="crypto"><span class="tab-dot"></span>Crypto</a>
   <a data-section="stock"><span class="tab-dot"></span>Stock</a>
   <a data-section="polymarket"><span class="tab-dot"></span>Polymarket</a>
+  <a data-section="hackernews"><span class="tab-dot"></span>Hacker News</a>
 </nav>
 
 <main class="container">
@@ -461,6 +465,9 @@ body {
   </div>
   <div class="section" id="section-polymarket">
     <div class="section-body" id="content-polymarket"><div class="loading">Loading</div></div>
+  </div>
+  <div class="section" id="section-hackernews">
+    <div class="section-body" id="content-hackernews"><div class="loading">Loading</div></div>
   </div>
 </main>
 
@@ -483,6 +490,7 @@ body {
     { key: 'crypto', path: d => `crypto_daily/${d}/report.md` },
     { key: 'stock',  path: d => `stock_daily/${d}/report.md` },
     { key: 'polymarket', path: d => `polymarket_daily/${d}/report.md` },
+    { key: 'hackernews', path: d => `hackernews_daily/${d}/report.md` },
   ];
 
   const dateDisplay = document.getElementById('date-display');

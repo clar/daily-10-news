@@ -38,6 +38,7 @@ jobs:
               'crypto': 'crypto_daily',
               'stock': 'stock_daily',
               'polymarket': 'polymarket_daily',
+              'hackernews': 'hackernews_daily',
           }
 
           all_dates = set()
