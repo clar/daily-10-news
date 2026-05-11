@@ -1,6 +1,6 @@
 # 项目说明
 
-本仓库用于存放每日自动生成的资讯报告（AI、加密、美股、GitHub trending、Polymarket）。
+本仓库用于存放每日自动生成的资讯报告（AI、加密、美股、GitHub trending、Polymarket、Hacker News）。
 
 ## 日期规则（强制）
 
@@ -17,6 +17,7 @@
    - `stock_daily/{YYYY-MM-DD}/report.md`
    - `polymarket_daily/{YYYY-MM-DD}/report.md`
    - `github_daily/{YYYY-MM-DD}/trending.md`
+   - `hackernews_daily/{YYYY-MM-DD}/report.md`
 4. 仓库中已存在某个日期的目录**不意味着**那就是今天，可能是历史报告——永远以命令输出为准。
 
 ## 执行模式（强制）
@@ -30,7 +31,7 @@
 **推荐流程（顺序执行）：**
 
 1. `TZ='Asia/Shanghai' date +%Y-%m-%d` 拿日期
-2. 逐个运行 5 个 skill（github-trending、ai-daily、crypto-daily、polymarket-analysis、stock-daily），每个完成立刻写文件
+2. 逐个运行 6 个 skill（github-trending、ai-daily、crypto-daily、polymarket-analysis、stock-daily、hacker-news），每个完成立刻写文件
 3. 全部完成后一次性 `git add` + `commit` + `push`
 
 **遇到问题时的优化策略（按顺序尝试）：**
@@ -48,7 +49,7 @@
 
 1. 开工前在 `main` 上 `git pull origin main`，确保基础最新
 2. 切到 daily 分支：harness 注入的分支名（如 `claude/practical-babbage-xxxx`）就用它；否则用 `git checkout -b claude/daily-{YYYY-MM-DD}`
-3. 写完 5 份报告，`git add` 对应目录 → `git commit` → `git push -u origin <daily-branch>`
+3. 写完 6 份报告，`git add` 对应目录 → `git commit` → `git push -u origin <daily-branch>`
 4. 立刻通过 GitHub MCP 自动合入 main，**无需人工点击**：
    - `mcp__github__create_pull_request`（base=`main`、head=`<daily-branch>`）
    - `mcp__github__merge_pull_request`（`merge_method=squash`）
