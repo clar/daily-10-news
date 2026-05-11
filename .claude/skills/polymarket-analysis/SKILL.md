@@ -13,6 +13,7 @@ Use the Polymarket Gamma API (public, no auth required):
 ### Key fields per event
 
 - `title` — event name
+- `slug` — URL slug; build the Polymarket link as `https://polymarket.com/event/{slug}`
 - `volume24hr` — 24h trading volume (USD)
 - `liquidity` — total liquidity (USD)
 - `markets[]` — individual outcomes
@@ -49,7 +50,7 @@ Generate a markdown file with this structure:
 
 | # | 市场 | 分类 | YES 概率 | 24h 交易量 | 流动性 |
 |---|------|------|----------|-----------|--------|
-(top 10 by volume24hr)
+(top 10 by volume24hr. **市场 cell must be a markdown link** to `https://polymarket.com/event/{slug}` — use the event's `slug` field from the Gamma API response, e.g. `[**Eurovision Winner 2026**](https://polymarket.com/event/eurovision-winner-2026)`)
 
 ---
 
