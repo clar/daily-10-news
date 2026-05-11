@@ -34,9 +34,9 @@ Generate a daily Hacker News front-page analysis in Chinese.
 
 ## 今日热榜总览
 
-| 排名 | 标题 | 来源 | 分数 | 评论数 |
+| 排名 | 标题 | 描述 | 分数 | 评论数 |
 |------|------|------|------|--------|
-(15-20 rows, with title as markdown link to the HN discussion or the article)
+(15-20 rows. 标题 is a markdown link to the HN discussion or the article. 描述 is a ≤25-character Chinese summary capturing the angle, not just restating the title.)
 
 ---
 
