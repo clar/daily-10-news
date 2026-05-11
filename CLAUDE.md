@@ -53,12 +53,14 @@
    - `mcp__github__create_pull_request`（base=`main`、head=`<daily-branch>`）
    - `mcp__github__merge_pull_request`（`merge_method=squash`）
 5. 合并成功即视为发布完成；如 MCP 返回需要审核/检查未通过，再告知用户人工介入
+6. 合并完成后**可以直接删除** daily 分支（无需保留历史，main 已经有 squash 后的提交）
 
 注意事项：
 
 - **永远不要尝试 `git push origin main`**，会浪费时间在 403 重试上
 - 如果当前已经在 daily 分支（如 routine 启动时 harness 已 checkout），直接在该分支上 commit/push 即可，不要切回 main
 - PR 标题统一格式：`feat: add daily reports for {YYYY-MM-DD}`
+- 删除 daily 分支可调用 `mcp__github__delete_file` 不行——用 `git push origin --delete <branch>` 或留待 GitHub UI 处理
 
 ## Skill 目录
 
