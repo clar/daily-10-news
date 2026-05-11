@@ -60,7 +60,7 @@
 - **永远不要尝试 `git push origin main`**，会浪费时间在 403 重试上
 - 如果当前已经在 daily 分支（如 routine 启动时 harness 已 checkout），直接在该分支上 commit/push 即可，不要切回 main
 - PR 标题统一格式：`feat: add daily reports for {YYYY-MM-DD}`
-- 删除 daily 分支可调用 `mcp__github__delete_file` 不行——用 `git push origin --delete <branch>` 或留待 GitHub UI 处理
+- 仓库已开启 GitHub "Automatically delete head branches"，PR squash 合并后 daily 分支会被 GitHub 服务端自动删除，**无需任何额外清理动作**
 
 ## Skill 目录
 
