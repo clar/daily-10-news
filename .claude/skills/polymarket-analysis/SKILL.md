@@ -50,7 +50,7 @@ Generate a markdown file with this structure:
 
 | # | 市场 | 分类 | YES 概率 | 24h 交易量 | 流动性 |
 |---|------|------|----------|-----------|--------|
-(top 10 by volume24hr. **市场 cell must be a markdown link** to `https://polymarket.com/event/{slug}` — use the event's `slug` field from the Gamma API response, e.g. `[**Eurovision Winner 2026**](https://polymarket.com/event/eurovision-winner-2026)`)
+(top 10 by volume24hr. **市场 cell must be a markdown link** to `https://polymarket.com/event/{slug}` using the event's `slug` field. Do NOT wrap the link text in `**bold**` — the frontend CSS styles `<strong>` with the body ink color, which would override the link's blue color. Correct example: `[Eurovision Winner 2026](https://polymarket.com/event/eurovision-winner-2026)`)
 
 ---
 
