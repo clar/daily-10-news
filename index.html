@@ -442,20 +442,23 @@ body {
 </header>
 
 <nav class="section-tabs" id="section-tabs">
-  <a data-section="github"><span class="tab-dot"></span>GitHub</a>
   <a data-section="ai"><span class="tab-dot"></span>AI</a>
+  <a data-section="hackernews"><span class="tab-dot"></span>Hacker News</a>
+  <a data-section="github"><span class="tab-dot"></span>GitHub</a>
   <a data-section="crypto"><span class="tab-dot"></span>Crypto</a>
   <a data-section="stock"><span class="tab-dot"></span>Stock</a>
   <a data-section="polymarket"><span class="tab-dot"></span>Polymarket</a>
-  <a data-section="hackernews"><span class="tab-dot"></span>Hacker News</a>
 </nav>
 
 <main class="container">
-  <div class="section" id="section-github">
-    <div class="section-body" id="content-github"><div class="loading">Loading</div></div>
-  </div>
   <div class="section" id="section-ai">
     <div class="section-body" id="content-ai"><div class="loading">Loading</div></div>
+  </div>
+  <div class="section" id="section-hackernews">
+    <div class="section-body" id="content-hackernews"><div class="loading">Loading</div></div>
+  </div>
+  <div class="section" id="section-github">
+    <div class="section-body" id="content-github"><div class="loading">Loading</div></div>
   </div>
   <div class="section" id="section-crypto">
     <div class="section-body" id="content-crypto"><div class="loading">Loading</div></div>
@@ -465,9 +468,6 @@ body {
   </div>
   <div class="section" id="section-polymarket">
     <div class="section-body" id="content-polymarket"><div class="loading">Loading</div></div>
-  </div>
-  <div class="section" id="section-hackernews">
-    <div class="section-body" id="content-hackernews"><div class="loading">Loading</div></div>
   </div>
 </main>
 
@@ -485,12 +485,12 @@ body {
   let activeSection = null;
 
   const SECTIONS = [
-    { key: 'github', path: d => `github_daily/${d}/trending.md` },
-    { key: 'ai',     path: d => `ai_daily/${d}/report.md` },
-    { key: 'crypto', path: d => `crypto_daily/${d}/report.md` },
-    { key: 'stock',  path: d => `stock_daily/${d}/report.md` },
-    { key: 'polymarket', path: d => `polymarket_daily/${d}/report.md` },
+    { key: 'ai',         path: d => `ai_daily/${d}/report.md` },
     { key: 'hackernews', path: d => `hackernews_daily/${d}/report.md` },
+    { key: 'github',     path: d => `github_daily/${d}/trending.md` },
+    { key: 'crypto',     path: d => `crypto_daily/${d}/report.md` },
+    { key: 'stock',      path: d => `stock_daily/${d}/report.md` },
+    { key: 'polymarket', path: d => `polymarket_daily/${d}/report.md` },
   ];
 
   const dateDisplay = document.getElementById('date-display');
@@ -608,7 +608,7 @@ body {
     const target = preferredSection && available.includes(preferredSection)
       ? preferredSection
       : findMostRecentSection(date, available);
-    switchSection(target || available[0] || 'github');
+    switchSection(target || available[0] || 'ai');
   }
 
   function findMostRecentSection(date, available) {
