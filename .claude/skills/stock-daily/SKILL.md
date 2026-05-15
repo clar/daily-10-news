@@ -88,6 +88,7 @@ Save to: `stock_daily/{YYYY-MM-DD}/report.md`
 ## Notes
 
 - All text in **Chinese**
+- **Do NOT insert any blockquote / 说明 / 日期范围说明 between the `#` H1 and the `## 今日焦点` heading.** The H1 should be immediately followed by `## 今日焦点`. If the date / session you cover needs clarifying, embed it inside the H1 itself or inside `## 今日焦点`; never as a leading note. Frontend renders markdown as-is and any leading note shows up above the focus section, which is unwanted.
 - Use bold **bold** around headlines in the speed table
 - Include specific prices with $ prefix ($425.30), percentages with sign (+2.3%, -1.8%), and large numbers with units ($42B market cap, $1.2T revenue)
 - Category tags should be single words (2-3 Chinese characters max)
