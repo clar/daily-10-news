@@ -17,25 +17,25 @@
 | 排名 | 标题 | 描述 | 分数 | 评论数 |
 |------|------|------|------|--------|
 | 1 | [RTX 5090 与 M4 MacBook Air 能玩游戏吗？](https://news.ycombinator.com/item?id=48137145) | eGPU 改 Mac 游戏机的极客实录 | 379 | 99 |
-| 2 | [拆掉我 2024 RAV4 的 modem + GPS](https://arkadiyt.com/2026/05/13/removing-the-modem-and-gps-from-my-rav4/) | 个人级"车机断网"实操指南 | 353 | 176 |
-| 3 | [AI 让我变笨了](https://jpain.io/god-damn-ai-is-making-me-dumb/) | 一年没写一行代码的程序员反思 | 266 | 177 |
+| 2 | [拆掉我 2024 RAV4 的 modem + GPS](https://news.ycombinator.com/item?id=48138136) | 个人级"车机断网"实操指南 | 353 | 176 |
+| 3 | [AI 让我变笨了](https://news.ycombinator.com/item?id=48139148) | 一年没写一行代码的程序员反思 | 266 | 177 |
 | 4 | [MIT 校长谈联邦经费与人才管线](https://news.ycombinator.com/item?id=48136262) | 校长亲下场谈博士招生 -20% | 525 | 557 |
-| 5 | [Nginx-Rift 新漏洞](https://github.com/DepthFirstDisclosures/Nginx-Rift) | 又一基础设施级 0day | 188 | 44 |
-| 6 | [加拿大早期电脑爱好者运动](https://museum.eecs.yorku.ca/exhibits/show/hobby_canada/hobby_canada) | 北方个人计算机考古 | 159 | 50 |
-| 7 | [大学的 AI 僵尸化](https://www.thenewcritic.com/p/the-great-zombification) | 学生 ChatGPT 化的危机叙事 | 99 | 52 |
-| 8 | [Apple M5 首个公开内核内存破坏 PoC](https://blog.calif.io/p/first-public-kernel-memory-corruption) | 硬件研究者盯紧 M 系列 | 80 | 10 |
-| 9 | [HDD 固件 hacking](https://icode4.coffee/?p=1465) | 重温底层硬件改造艺术 | 72 | 6 |
-| 10 | [水生千足虫祖先化石](https://phys.org/news/2026-05-ancient-sea-fossils-millipede-centipede.html) | 节肢动物演化新证据 | 57 | 2 |
-| 11 | [钱与物的混淆](https://lithub.com/is-it-even-real-on-the-conflation-of-money-and-things/) | 金融抽象化的人文反思 | 55 | 19 |
-| 12 | [a = a++ + ++a 等于多少（2011）](https://gynvael.coldwind.pl/?id=372) | C 未定义行为经典坑 | 47 | 81 |
-| 13 | [你不是对齐 AI，而是与 AI 对齐](https://danieltan.weblog.lol/2026/05/you-dont-align-an-ai-you-align-with-it) | alignment 视角转换 | 45 | 19 |
-| 14 | [GGUF 里到底有什么？](https://nobodywho.ooo/posts/whats-in-a-gguf/) | 本地 LLM 文件格式拆解 | 41 | 14 |
-| 15 | [WinUI 3 性能大跃进](https://github.com/microsoft/microsoft-ui-xaml/discussions/11096) | 微软 UI 框架终于起飞 | 38 | 12 |
-| 16 | [Stanford 免费冰棍的力量（2018）](https://www.gsb.stanford.edu/insights/power-free-popsicle) | 行为经济学经典实验 | 39 | 9 |
-| 17 | [理解 Linux 内核：启动流程](https://internals-for-interns.com/posts/linux-kernel-startup/) | 内核新人指北 | 45 | 6 |
-| 18 | [移植 3D Movie Maker 到 Linux](https://benstoneonline.com/posts/porting-3d-movie-maker-to-linux/) | 童年 Microsoft 软件复活 | 10 | 0 |
-| 19 | [RISC-V 路由器](https://router.start9.com/) | 开放硬件家用网关 | 4 | 1 |
-| 20 | [Terranox AI (YC W26) 招聘](https://www.workatastartup.com/companies/terranox-ai) | YC 系新公司 hiring | 1 | 0 |
+| 5 | [Nginx-Rift 新漏洞](https://news.ycombinator.com/item?id=48138268) | 又一基础设施级 0day | 188 | 44 |
+| 6 | [加拿大早期电脑爱好者运动](https://news.ycombinator.com/item?id=48134743) | 北方个人计算机考古 | 159 | 50 |
+| 7 | [大学的 AI 僵尸化](https://news.ycombinator.com/item?id=48139355) | 学生 ChatGPT 化的危机叙事 | 99 | 52 |
+| 8 | [Apple M5 首个公开内核内存破坏 PoC](https://news.ycombinator.com/item?id=48139219) | 硬件研究者盯紧 M 系列 | 80 | 10 |
+| 9 | [HDD 固件 hacking](https://news.ycombinator.com/item?id=48137553) | 重温底层硬件改造艺术 | 72 | 6 |
+| 10 | [水生千足虫祖先化石](https://news.ycombinator.com/item?id=48100368) | 节肢动物演化新证据 | 57 | 2 |
+| 11 | [钱与物的混淆](https://news.ycombinator.com/item?id=48136992) | 金融抽象化的人文反思 | 55 | 19 |
+| 12 | [a = a++ + ++a 等于多少（2011）](https://news.ycombinator.com/item?id=48108621) | C 未定义行为经典坑 | 47 | 81 |
+| 13 | [你不是对齐 AI，而是与 AI 对齐](https://news.ycombinator.com/item?id=48139144) | alignment 视角转换 | 45 | 19 |
+| 14 | [GGUF 里到底有什么？](https://news.ycombinator.com/item?id=48138332) | 本地 LLM 文件格式拆解 | 41 | 14 |
+| 15 | [WinUI 3 性能大跃进](https://news.ycombinator.com/item?id=48139704) | 微软 UI 框架终于起飞 | 38 | 12 |
+| 16 | [Stanford 免费冰棍的力量（2018）](https://news.ycombinator.com/item?id=48139316) | 行为经济学经典实验 | 39 | 9 |
+| 17 | [理解 Linux 内核：启动流程](https://news.ycombinator.com/item?id=48139220) | 内核新人指北 | 45 | 6 |
+| 18 | [移植 3D Movie Maker 到 Linux](https://news.ycombinator.com/item?id=48097786) | 童年 Microsoft 软件复活 | 10 | 0 |
+| 19 | [RISC-V 路由器](https://news.ycombinator.com/item?id=48140541) | 开放硬件家用网关 | 4 | 1 |
+| 20 | [Terranox AI (YC W26) 招聘](https://news.ycombinator.com/item?id=48138063) | YC 系新公司 hiring | 1 | 0 |
 
 ---
 

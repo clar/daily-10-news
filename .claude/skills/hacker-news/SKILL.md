@@ -36,7 +36,7 @@ Generate a daily Hacker News front-page analysis in Chinese.
 
 | 排名 | 标题 | 描述 | 分数 | 评论数 |
 |------|------|------|------|--------|
-(15-20 rows. 标题 is a markdown link to the HN discussion or the article. 描述 is a ≤25-character Chinese summary capturing the angle, not just restating the title.)
+(15-20 rows. **标题 must always link to the HN discussion page** (`https://news.ycombinator.com/item?id={id}`) — readers come here to find the discussion, not the article. 描述 is a ≤25-character Chinese summary capturing the angle, not just restating the title.)
 
 ---
 
@@ -72,7 +72,8 @@ Save to: `hackernews_daily/{YYYY-MM-DD}/report.md`
 ## Notes
 
 - All text in **Chinese**
-- Title links: prefer the HN comments page (`https://news.ycombinator.com/item?id={id}`) when the discussion is the story; use the article URL when the link itself is the substance
+- **热榜总览表的标题链接必须是 HN 讨论页** (`https://news.ycombinator.com/item?id={id}`)，让读者一键进入评论区；**不要**指向原文 URL
+- 重点讨论点评 (🥇🥈🥉…) 的标题链接也优先用 HN 讨论页；如果文章本身才是"主菜"（如长篇研究 / 公告原文），可以指向原文，但要在正文里另行提供 HN 讨论链接
 - Score/comments in format `{N}分 · {M}评`
 - Distinguish HN's recurring genres: **Show HN** (creator self-post), **Ask HN** (question to the community), **Launch HN** (YC company launch) — call these out explicitly
 - Focus on **why the HN crowd cares**, not just summarizing the article — this skill's value is reading the room, not aggregating links
