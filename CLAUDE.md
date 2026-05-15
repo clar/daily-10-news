@@ -11,13 +11,13 @@
    ```
    TZ='Asia/Shanghai' date +%Y-%m-%d
    ```
-3. 该命令输出即为"今日"日期（格式 `YYYY-MM-DD`），用于所有报告目录：
+3. 该命令输出即为"今日"日期（格式 `YYYY-MM-DD`），用于所有报告目录（按推荐执行顺序）：
    - `ai_daily/{YYYY-MM-DD}/report.md`
+   - `hackernews_daily/{YYYY-MM-DD}/report.md`
+   - `github_daily/{YYYY-MM-DD}/trending.md`
    - `crypto_daily/{YYYY-MM-DD}/report.md`
    - `stock_daily/{YYYY-MM-DD}/report.md`
    - `polymarket_daily/{YYYY-MM-DD}/report.md`
-   - `github_daily/{YYYY-MM-DD}/trending.md`
-   - `hackernews_daily/{YYYY-MM-DD}/report.md`
 4. 仓库中已存在某个日期的目录**不意味着**那就是今天，可能是历史报告——永远以命令输出为准。
 
 ## 执行模式（强制）
@@ -31,7 +31,7 @@
 **推荐流程（顺序执行）：**
 
 1. `TZ='Asia/Shanghai' date +%Y-%m-%d` 拿日期
-2. 逐个运行 6 个 skill（github-trending、ai-daily、crypto-daily、polymarket-analysis、stock-daily、hacker-news），每个完成立刻写文件
+2. 逐个运行 6 个 skill（ai-daily、hacker-news、github-trending、crypto-daily、stock-daily、polymarket-analysis），每个完成立刻写文件
 3. 全部完成后一次性 `git add` + `commit` + `push`
 
 **遇到问题时的优化策略（按顺序尝试）：**

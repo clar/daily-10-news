@@ -1,6 +1,6 @@
 # Daily Reports Orchestrator
 
-Run all six daily report skills (github-trending, ai-daily, crypto-daily, polymarket-analysis, stock-daily, hacker-news), then commit and publish via PR — one command end-to-end.
+Run all six daily report skills (ai-daily, hacker-news, github-trending, crypto-daily, stock-daily, polymarket-analysis), then commit and publish via PR — one command end-to-end.
 
 ## When to invoke
 
@@ -32,12 +32,12 @@ Run each skill in order; after each, write the report file immediately, then pro
 
 | # | Skill | Output path |
 |---|-------|-------------|
-| 1 | `github-trending` | `github_daily/{DATE}/trending.md` |
-| 2 | `ai-daily` | `ai_daily/{DATE}/report.md` |
-| 3 | `crypto-daily` | `crypto_daily/{DATE}/report.md` |
-| 4 | `polymarket-analysis` | `polymarket_daily/{DATE}/report.md` |
+| 1 | `ai-daily` | `ai_daily/{DATE}/report.md` |
+| 2 | `hacker-news` | `hackernews_daily/{DATE}/report.md` |
+| 3 | `github-trending` | `github_daily/{DATE}/trending.md` |
+| 4 | `crypto-daily` | `crypto_daily/{DATE}/report.md` |
 | 5 | `stock-daily` | `stock_daily/{DATE}/report.md` |
-| 6 | `hacker-news` | `hackernews_daily/{DATE}/report.md` |
+| 6 | `polymarket-analysis` | `polymarket_daily/{DATE}/report.md` |
 
 Use TodoWrite to track the 6 skill runs + the commit step as 7 items. Mark each complete the moment its file is written.
 
@@ -51,8 +51,8 @@ Use TodoWrite to track the 6 skill runs + the commit step as 7 items. Mark each 
 ## Commit + merge (after all skills done)
 
 ```
-git add github_daily/{DATE} ai_daily/{DATE} crypto_daily/{DATE} \
-        polymarket_daily/{DATE} stock_daily/{DATE} hackernews_daily/{DATE}
+git add ai_daily/{DATE} hackernews_daily/{DATE} github_daily/{DATE} \
+        crypto_daily/{DATE} stock_daily/{DATE} polymarket_daily/{DATE}
 git commit -m "feat: add daily reports for {DATE}"
 git push -u origin <current-branch>
 ```
