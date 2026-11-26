@@ -95,35 +95,53 @@ jobs:
           name: github-pages-${{ github.run_attempt }}
           path: .
 
-      - name: Wait for Pages artifact metadata
+      - name: Install Pages artifact readiness probe
+        timeout-minutes: 2
+        working-directory: ${{ runner.temp }}
+        run: >-
+          npm install --prefix "$RUNNER_TEMP/pages-artifact-probe"
+          --cache "$RUNNER_TEMP/pages-npm-cache" --ignore-scripts --no-audit --no-fund
+          --fetch-retries=1 --fetch-timeout=15000 @actions/artifact@2.1.3
+
+      - name: Wait for the Pages deploy artifact listing
+        timeout-minutes: 3
         uses: actions/github-script@v7
         env:
           ARTIFACT_ID: ${{ steps.pages_upload.outputs.artifact_id }}
           ARTIFACT_NAME: github-pages-${{ github.run_attempt }}
         with:
           script: |
+            const { createRequire } = require('node:module');
+            const { join } = require('node:path');
+            const requireProbe = createRequire(join(process.env.RUNNER_TEMP, 'pages-artifact-probe', 'package.json'));
+            const { DefaultArtifactClient } = requireProbe('@actions/artifact');
+            const client = new DefaultArtifactClient();
             const artifactId = Number(process.env.ARTIFACT_ID);
             const name = process.env.ARTIFACT_NAME;
-            if (!Number.isSafeInteger(artifactId) || artifactId <= 0) {
-              core.setFailed('Pages upload did not return a valid artifact ID.');
+            if (!Number.isSafeInteger(artifactId) || artifactId <= 0 || !name) {
+              core.setFailed('Pages upload did not return valid artifact metadata.');
               return;
             }
+            // Match deploy-pages v4: list artifacts through the current run's
+            // runtime artifact service, not REST's get-by-ID metadata index.
             for (let attempt = 0; attempt < 12; attempt++) {
               try {
-                const { data } = await github.rest.actions.getArtifact({
-                  ...context.repo,
-                  artifact_id: artifactId,
-                });
-                if (data.id === artifactId && data.name === name && !data.expired) {
-                  core.info(`Pages artifact ${name} is visible (ID ${artifactId}).`);
+                const { artifacts } = await client.listArtifacts();
+                const matches = artifacts.filter(artifact => artifact.name === name);
+                if (matches.length > 1) {
+                  core.setFailed(`More than one artifact named ${name} was returned.`);
                   return;
                 }
-              } catch (error) {
-                if (error.status !== 404) throw error;
+                if (matches.length === 1 && Number(matches[0].id) === artifactId) {
+                  core.info(`Pages deploy listing contains ${name} (ID ${artifactId}).`);
+                  return;
+                }
+              } catch {
+                core.warning('Pages deploy artifact listing unavailable; waiting before retry.');
               }
               if (attempt < 11) await new Promise(resolve => setTimeout(resolve, 5000));
             }
-            core.setFailed(`Pages artifact ${name} (ID ${artifactId}) did not become visible.`);
+            core.setFailed(`Pages deploy listing did not return ${name} (ID ${artifactId}).`);
 
       - id: deployment
         uses: actions/deploy-pages@v4
